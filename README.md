@@ -1,6 +1,3 @@
-# dema-website
-A website for the web planning system.
-
 # Dema website
 The development of the Dema project website. The project is built in ```vuejs```. Plugins include:
 
