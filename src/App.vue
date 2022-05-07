@@ -17,32 +17,32 @@
       <router-view />
     </v-main>
 
-    <v-footer padless dark>
+    <v-footer dark padless>
       <v-card flat tile class="success">
-        <v-card-text class="white--text text-center pa-0">
+        <v-card-text class="text-center pa-0">
           <v-img
             src="./assets/images/dema7.jpeg"
-            gradient="to bottom right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)"
+            gradient="to top, rgba(0, 0, 0, 0.2), rgba(0, 105, 77, 0.6), rgba(0, 105, 77, 1)"
             width="100vw"
-            max-height="250px"
+            max-height="300px"
           >
             <v-container class="fill-height">
               <v-row align="center">
-                <v-col cols="6">
-                  <h2>Ready to get started?</h2>
+                <v-col cols="12" md="6">
+                  <h2 class="py-4">Ready to get started?</h2>
                 </v-col>
-                <v-col cols="6">
+                <v-col cols="12" md="6">
                   <v-text-field
                     outlined
                     dense
-                    single-line
-                    label="Email"
+                    label="Name"
+                    type="text"
                   ></v-text-field>
                   <v-text-field
                     outlined
                     dense
-                    single-line
-                    label="Phone Number"
+                    label="Email address"
+                    type="email"
                   ></v-text-field>
                   <v-btn
                     block
@@ -61,10 +61,16 @@
         <v-divider></v-divider>
 
         <v-card-text class="white--text">
-          <v-btn depressed rounded link text to="" class="mx-2 text-none"
+          <v-btn depressed rounded link text to="/about" class="mx-2 text-none"
             >About</v-btn
           >
-          <v-btn depressed rounded link text to="" class="mx-2 text-none"
+          <v-btn
+            depressed
+            rounded
+            link
+            text
+            to="/contact"
+            class="mx-2 text-none"
             >Contact</v-btn
           >
         </v-card-text>
@@ -85,11 +91,11 @@ html {
   overflow-y: auto !important;
 }
 
-.theme--light.v-app-bar.v-toolbar.v-sheet {
-  background-color: #ffffff !important;
+.b {
+  border: 1px solid black;
 }
 
-* {
-  font-family: "Raleway", sans-serif;
+.theme--light.v-app-bar.v-toolbar.v-sheet {
+  background-color: #ffffff !important;
 }
 </style>

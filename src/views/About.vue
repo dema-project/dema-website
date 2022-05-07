@@ -1,5 +1,14 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="about b">
+    <v-sheet dark>
+      <v-img
+        height="200px"
+        src="https://cdn.vuetifyjs.com/images/cards/cooking.png"
+      >
+        <v-card>
+          <v-card-title>Card</v-card-title>
+        </v-card>
+      </v-img>
+    </v-sheet>
   </div>
 </template>
